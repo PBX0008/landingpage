@@ -1686,3 +1686,570 @@ body{padding-top:66px!important}
   padding:0!important;
   margin:0!important;
 }
+
+
+/* V32 — supplied PBX Nursing logo in header and footer */
+.brand-logo-link{
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:flex-start!important;
+  width:auto!important;
+  min-width:52px;
+  height:100%;
+  line-height:0;
+}
+.brand-logo-img{
+  display:block;
+  width:auto;
+  height:48px;
+  max-width:72px;
+  object-fit:contain;
+}
+.site-footer{
+  grid-template-columns:minmax(105px,.62fr) repeat(3,minmax(0,1fr))!important;
+  column-gap:clamp(22px,4vw,64px)!important;
+}
+.footer-brand{
+  display:flex;
+  align-items:flex-start;
+  justify-content:flex-start;
+  align-self:start;
+  width:max-content;
+  max-width:100%;
+  line-height:0;
+}
+.footer-logo-img{
+  display:block;
+  width:118px;
+  height:auto;
+  max-width:100%;
+  object-fit:contain;
+}
+.footer-legal{
+  grid-column:1/-1!important;
+}
+@media(max-width:1080px){
+  .brand-logo-img{height:45px;max-width:68px}
+  .site-footer{
+    grid-template-columns:minmax(90px,.5fr) repeat(3,minmax(0,1fr))!important;
+    column-gap:22px!important;
+  }
+  .footer-logo-img{width:102px}
+}
+@media(max-width:760px){
+  .brand-logo-img{height:42px;max-width:63px}
+  .site-footer{
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+  }
+  .footer-brand{
+    grid-column:1/-1;
+    margin-bottom:2px;
+  }
+  .footer-logo-img{width:92px}
+}
+@media(max-width:520px){
+  .site-footer{grid-template-columns:1fr!important}
+  .footer-brand{grid-column:1!important}
+  .footer-logo-img{width:88px}
+}
+@media(max-width:470px){
+  .brand-logo-img{height:39px;max-width:59px}
+}
+
+/* V34 — mobile viewport containment + ultra-compact vertical rhythm */
+@media (max-width:760px){
+  html,body{
+    width:100%!important;
+    max-width:100%!important;
+    overflow-x:hidden!important;
+  }
+  body{padding-top:52px!important}
+  main{width:100%!important;max-width:100%!important;overflow-x:hidden!important}
+  .topbar{width:100%!important;max-width:100%!important;overflow:visible!important}
+  .topbar-inner{
+    width:calc(100% - 24px)!important;
+    max-width:100%!important;
+    height:52px!important;
+    gap:10px!important;
+  }
+  .mobile-nav{top:52px!important;max-height:calc(100vh - 52px);overflow:auto}
+  .brand-logo-img{height:37px!important;max-width:56px!important}
+  .menu-button{width:34px!important;height:34px!important}
+  .menu-button span{left:8px!important}
+
+  .section-shell{
+    width:calc(100% - 24px)!important;
+    max-width:calc(100% - 24px)!important;
+    min-width:0!important;
+  }
+  .hero,.manifesto,.judgment,.analytics,.flow-section,.capabilities,.pricing,.final-cta,.site-footer,
+  .hero-copy,.hero-visual,.flow-inner,.flow-copy,.lightbulb-art,.judgment-inner,.judgment-copy,.judgment-visual,
+  .analytics-title,.analytics-stage,.flow-typewriter .typewriter-art,.capabilities-intro,.capability-list,
+  .pricing-head,.pricing-head-copy,.pricing-stage,.pricing-summary,.pricing-side,.code-savings,.code-savings-visual,.code-savings-copy{
+    min-width:0!important;
+    max-width:100%!important;
+  }
+  .hero,.manifesto,.judgment,.analytics,.flow-section,.capabilities,.pricing,.final-cta{overflow-x:hidden!important}
+  .ambient{max-width:100vw!important;max-height:100vw!important}
+
+  /* Hero */
+  .hero{
+    min-height:0!important;
+    padding-top:16px!important;
+    padding-bottom:14px!important;
+    gap:0!important;
+  }
+  .hero-copy{padding:0!important}
+  .brand-mark{font-size:17px!important}
+  .brand-name{font-size:7px!important}
+  .hero h1{
+    margin:10px 0 12px!important;
+    font-size:clamp(40px,11.8vw,48px)!important;
+    line-height:.91!important;
+    letter-spacing:-.058em!important;
+    overflow-wrap:anywhere;
+  }
+  .hero-lede{font-size:12px!important;line-height:1.48!important;margin:0!important}
+  .hero-actions{
+    margin-top:14px!important;
+    flex-direction:row!important;
+    flex-wrap:wrap!important;
+    align-items:center!important;
+    gap:10px 14px!important;
+  }
+  .primary-action{min-height:42px!important;padding:0 15px!important;gap:20px!important;font-size:9px!important}
+  .secondary-action{font-size:9px!important;gap:8px!important}
+  .play-icon{width:26px!important;height:26px!important}
+  .hero-meta{margin-top:14px!important;gap:7px!important;font-size:7px!important;line-height:1.2!important}
+  .hero-visual{height:278px!important;margin:2px 0 0!important;overflow:hidden!important}
+  .hero-orbit{max-width:94vw!important;max-height:94vw!important}
+  .orbit-a{width:92vw!important;height:92vw!important}
+  .orbit-b{width:104vw!important;height:104vw!important}
+  .hero-glow{width:92vw!important;height:92vw!important}
+  .review-device{width:96%!important;max-width:100%!important}
+  .device-bezel{padding:7px!important;border-radius:16px!important}
+  .device-screen{border-radius:10px!important}
+  .score-float{width:38vw!important;min-width:112px!important;max-width:145px!important;right:2px!important;bottom:7px!important}
+
+  /* Experience */
+  .manifesto{
+    min-height:0!important;
+    padding-top:24px!important;
+    padding-bottom:24px!important;
+    gap:10px!important;
+  }
+  .manifesto-index{padding-top:0!important;gap:9px!important}
+  .manifesto-index i{width:30px!important}
+  .manifesto-copy h2{font-size:clamp(38px,10.8vw,46px)!important;line-height:.96!important;margin-bottom:12px!important}
+  .manifesto-copy p{font-size:12px!important;line-height:1.48!important;margin:0!important}
+  .manifesto-lines{height:44px!important;bottom:0!important}
+
+  /* Practice / bulb */
+  .flow-inner,.flow-inner.reverse{
+    min-height:0!important;
+    padding-top:20px!important;
+    padding-bottom:20px!important;
+    gap:8px!important;
+  }
+  .lightbulb-art{height:278px!important;overflow:hidden!important}
+  .lightbulb-art svg{max-width:100%!important;height:100%!important}
+  .flow-copy{padding:0!important}
+  .section-kicker{margin-bottom:9px!important;font-size:8px!important;line-height:1.2!important}
+  .flow-copy h2,.analytics-title h2,.capabilities-intro h2{
+    font-size:clamp(37px,10.4vw,44px)!important;
+    line-height:.96!important;
+    margin-bottom:11px!important;
+  }
+  .flow-copy>p{font-size:11.5px!important;line-height:1.48!important;margin:0!important}
+  .plain-feature-list,.review-steps{margin-top:14px!important}
+  .plain-feature-list>div{
+    grid-template-columns:26px 86px minmax(0,1fr)!important;
+    min-height:50px!important;
+    gap:5px!important;
+  }
+  .plain-feature-list span{font-size:10px!important;line-height:1.2!important}
+  .plain-feature-list p{font-size:8.5px!important;line-height:1.35!important}
+
+  /* Clinical judgment */
+  .judgment-inner{padding-top:24px!important;padding-bottom:22px!important;gap:6px!important}
+  .judgment-copy h2{font-size:clamp(40px,11vw,47px)!important;line-height:.91!important;margin-bottom:11px!important}
+  .judgment-copy p{font-size:11.5px!important;line-height:1.5!important;margin:0!important}
+  .line-link{margin-top:13px!important;font-size:8.5px!important;gap:20px!important}
+  .judgment-visual{height:338px!important;margin:0!important;overflow:hidden!important}
+  .judgment-visual .cj-axis{width:88vw!important;height:58vw!important;max-width:348px!important;max-height:230px!important}
+  .judgment-visual .cj-core{width:112px!important;height:112px!important}
+  .judgment-visual .cj-core .core-clinical,.judgment-visual .cj-core .core-judgment{font-size:13px!important}
+  .judgment-visual .cj-node{
+    width:108px!important;
+    min-width:108px!important;
+    height:36px!important;
+    padding:0 5px 0 36px!important;
+  }
+  .judgment-visual .cj-node b{left:7px!important;width:22px!important;height:22px!important;font-size:6px!important}
+  .judgment-visual .cj-node span{font-size:6px!important}
+
+  /* Analytics */
+  .analytics{padding-top:26px!important;padding-bottom:28px!important}
+  .analytics-title{gap:0!important}
+  .analytics-title .section-kicker{padding-top:0!important}
+  .analytics-stage{
+    margin-top:16px!important;
+    min-height:420px!important;
+    padding:18px 15px 14px!important;
+  }
+  .analytics-topline{font-size:6.5px!important;gap:12px!important}
+  .analytics-topline b{font-size:6.5px!important;text-align:right!important}
+  .metric-big{left:15px!important;top:58px!important}
+  .metric-big strong{font-size:54px!important}
+  .metric-big sup{font-size:20px!important}
+  .curve-wrap{left:15px!important;right:15px!important;top:124px!important;height:180px!important}
+  .analytics-bottom{
+    left:15px!important;
+    right:15px!important;
+    bottom:13px!important;
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+    gap:8px!important;
+  }
+  .analytics-bottom>div{padding-top:8px!important;min-width:0!important}
+  .analytics-bottom span{font-size:5.8px!important;margin-bottom:4px!important;line-height:1.2!important}
+  .analytics-bottom b{font-size:7.3px!important;line-height:1.28!important;display:block!important;overflow-wrap:anywhere!important}
+
+  /* Momentum / typewriter */
+  .review-steps>div{grid-template-columns:62px 24px minmax(0,1fr)!important;min-height:43px!important}
+  .review-steps b{font-size:10px!important}
+  .review-steps p{font-size:9px!important}
+  .flow-typewriter .typewriter-art{height:184px!important;overflow:hidden!important}
+  .fixed-typewriter-copy{
+    width:100%!important;
+    padding-left:9px!important;
+    padding-right:9px!important;
+    font-size:clamp(21px,6.9vw,27px)!important;
+    overflow:hidden!important;
+  }
+  .fixed-typewriter-copy .fixed-type-line{overflow:hidden!important;white-space:nowrap!important}
+  .type-caption{right:8px!important;bottom:8px!important;font-size:5.5px!important}
+
+  /* Capability list */
+  .capabilities{padding-top:27px!important;padding-bottom:28px!important}
+  .capabilities-intro{gap:0!important}
+  .capabilities-intro .section-kicker{padding-top:0!important}
+  .capability-list{margin-top:14px!important}
+  .capability-list article{
+    grid-template-columns:28px minmax(0,1fr) 18px!important;
+    gap:7px!important;
+    min-height:0!important;
+    padding:10px 0!important;
+  }
+  .capability-list h3{font-size:15px!important;line-height:1.18!important;margin:0!important}
+  .capability-list p{grid-column:2/3!important;margin:4px 0 0!important;font-size:10px!important;line-height:1.35!important}
+  .capability-list article>span{grid-column:3!important;grid-row:1!important}
+
+  /* Pricing */
+  .pricing{padding-top:28px!important;padding-bottom:30px!important}
+  .pricing-head{gap:10px!important}
+  .pricing-head h2{font-size:clamp(39px,10.8vw,46px)!important;line-height:.95!important}
+  .pricing-head p{margin-top:9px!important;font-size:11.5px!important;line-height:1.46!important}
+  .auto-photo-carousel{width:88%!important;max-width:340px!important;margin:6px auto 0!important}
+  .ipad-carousel-frame{padding:5px 5px 7px!important;border-radius:14px!important}
+  .auto-carousel-stage{min-height:112px!important}
+  .auto-carousel-dots{margin-top:5px!important}
+  .pricing-stage{margin-top:14px!important;gap:12px!important}
+  .pricing-summary{padding:18px 16px 17px!important;border-radius:18px!important}
+  .summary-tag{min-height:25px!important;padding:0 9px!important;font-size:8px!important}
+  .summary-line{margin-top:12px!important;font-size:16px!important}
+  .summary-price{margin-top:10px!important;font-size:52px!important}
+  .summary-price span{font-size:21px!important;top:6px!important}
+  .summary-sub{margin-top:5px!important;font-size:12px!important}
+  .summary-features{margin-top:15px!important;gap:7px!important}
+  .summary-features li{padding-left:19px!important;font-size:10.5px!important;line-height:1.38!important}
+  .summary-features li:before{width:8px!important;height:8px!important;box-shadow:0 0 0 3px rgba(106,181,230,.18)!important}
+  .pricing-actions{margin-top:15px!important;gap:9px!important}
+  .secondary-pricing{min-height:42px!important;padding:0 15px!important;font-size:9px!important}
+  .pricing-side{gap:5px!important}
+  .trial-strip{padding:15px 15px 13px!important}
+  .trial-strip b{font-size:19px!important}
+  .trial-strip p{margin-top:6px!important;font-size:10.5px!important;line-height:1.4!important}
+  .assurance-list>div{grid-template-columns:32px minmax(0,1fr)!important;gap:9px!important;padding:9px 0!important}
+  .assurance-list b{width:28px!important;height:28px!important}
+  .assurance-list p{font-size:10.5px!important;line-height:1.4!important}
+
+  /* Referral/promo band */
+  .code-savings{margin-top:14px!important;min-height:0!important}
+  .code-savings-visual{width:72%!important;max-width:300px!important;margin:0 auto!important;overflow:hidden!important}
+  .code-savings-copy{padding:14px 15px 18px!important}
+  .code-savings h3{margin-bottom:14px!important;font-size:24px!important}
+  .code-offer + .code-offer{margin-top:12px!important;padding-top:12px!important}
+  .code-offer-title{font-size:9px!important;margin-bottom:4px!important}
+  .code-offer-value{font-size:18px!important}
+  .code-offer p{margin-top:6px!important;font-size:10.5px!important;line-height:1.42!important}
+  .code-fineprint{margin-top:13px!important;padding-top:10px!important;font-size:9.5px!important;line-height:1.4!important}
+
+  /* Final CTA */
+  .final-cta{min-height:300px!important;padding:26px 0!important}
+  .final-inner h2{font-size:clamp(41px,11.2vw,48px)!important;line-height:.9!important;margin:8px 0 12px!important}
+  .final-inner p{font-size:11.5px!important;line-height:1.45!important;margin:0!important}
+  .final-button{margin-top:15px!important;min-height:42px!important;padding:0 15px!important;gap:24px!important}
+  .final-light{width:100vw!important;height:100vw!important;right:-32vw!important;top:-24vw!important}
+
+  /* Footer — preserve all links but avoid a tall stacked mobile footer. */
+  .site-footer{
+    width:calc(100% - 24px)!important;
+    max-width:calc(100% - 24px)!important;
+    grid-template-columns:repeat(3,minmax(0,1fr))!important;
+    gap:16px 10px!important;
+    padding-top:18px!important;
+    padding-bottom:13px!important;
+  }
+  .footer-brand{grid-column:1/-1!important;margin-bottom:0!important}
+  .footer-logo-img{width:78px!important}
+  .footer-group h3{margin-bottom:7px!important;font-size:9px!important}
+  .footer-group ul{padding-left:13px!important;gap:4px!important}
+  .footer-group li{font-size:8px!important;line-height:1.35!important;overflow-wrap:anywhere!important}
+  .footer-legal{margin-top:2px!important;padding-top:10px!important}
+  .footer-legal p{font-size:7px!important;line-height:1.35!important}
+}
+
+@media (max-width:360px){
+  .section-shell,.topbar-inner,.site-footer{width:calc(100% - 18px)!important;max-width:calc(100% - 18px)!important}
+  .hero h1{font-size:39px!important}
+  .hero-visual{height:250px!important}
+  .lightbulb-art{height:255px!important}
+  .flow-copy h2,.analytics-title h2,.capabilities-intro h2{font-size:36px!important}
+  .judgment-copy h2{font-size:39px!important}
+  .judgment-visual{height:318px!important}
+  .analytics-stage{min-height:405px!important}
+  .fixed-typewriter-copy{font-size:21px!important;padding-left:7px!important;padding-right:7px!important}
+  .pricing-head h2{font-size:38px!important}
+  .site-footer{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  .footer-brand,.footer-legal{grid-column:1/-1!important}
+}
+
+/* V35 — never allow decorative layers to create horizontal page scroll. */
+html{overflow-x:hidden}
+
+
+/* V36 — close the mobile hero/Experience gap + keep the complete bulb visible. */
+.flow-lightbulb .lightbulb-art{
+  overflow:visible!important;
+}
+.flow-lightbulb .lightbulb-art svg{
+  overflow:visible!important;
+  max-width:100%!important;
+}
+
+@media (max-width:760px){
+  /* The tablet is ~16:9; do not reserve a tall empty grid cell below it. */
+  .hero{
+    padding-bottom:0!important;
+  }
+  .hero-visual{
+    height:clamp(205px,58vw,248px)!important;
+    margin-top:0!important;
+    margin-bottom:0!important;
+  }
+
+  /* Bring 01 THE EXPERIENCE immediately into the visible flow. */
+  .manifesto{
+    padding-top:8px!important;
+  }
+
+  /* Show the complete bulb, including its lower base, without increasing page length. */
+  .lightbulb-art{
+    height:278px!important;
+    overflow:visible!important;
+  }
+  .lightbulb-art svg{
+    width:100%!important;
+    height:100%!important;
+    overflow:visible!important;
+  }
+}
+
+@media (max-width:360px){
+  .hero-visual{
+    height:clamp(190px,58vw,209px)!important;
+  }
+  .manifesto{
+    padding-top:7px!important;
+  }
+  .lightbulb-art{
+    height:255px!important;
+  }
+}
+
+/* V37 — true mobile gap removal + full bulb containment. */
+/* Fit the complete SVG by HEIGHT, not by width. This keeps the lower bulb cap
+   and the "prepare" callout inside the visible artwork in every viewport. */
+.flow-lightbulb .lightbulb-art{
+  overflow:visible!important;
+}
+.flow-lightbulb .lightbulb-art svg{
+  display:block!important;
+  width:auto!important;
+  height:100%!important;
+  max-width:100%!important;
+  max-height:100%!important;
+  margin:0 auto!important;
+  overflow:visible!important;
+}
+
+@media (max-width:760px){
+  /* Let the real tablet determine the hero's height. Fixed hero-visual heights
+     were reserving empty pixels below the displayed device. */
+  .hero-visual{
+    height:auto!important;
+    min-height:0!important;
+    margin:0!important;
+    padding:0!important;
+    overflow:visible!important;
+  }
+  .hero .review-device{
+    margin:0 auto!important;
+  }
+  .hero{
+    padding-bottom:0!important;
+    row-gap:0!important;
+  }
+  #experience.manifesto{
+    margin-top:0!important;
+    padding-top:4px!important;
+  }
+
+  /* Compact but fully visible: SVG now scales down to this height instead of
+     being width-fitted and vertically cropped. */
+  .flow-lightbulb .lightbulb-art{
+    height:300px!important;
+    min-height:300px!important;
+    padding:0!important;
+    margin:0!important;
+  }
+  .flow-lightbulb .flow-inner{
+    padding-bottom:4px!important;
+  }
+}
+
+@media (max-width:360px){
+  #experience.manifesto{padding-top:3px!important}
+  .flow-lightbulb .lightbulb-art{
+    height:278px!important;
+    min-height:278px!important;
+  }
+}
+
+
+/* V38 — definitive bulb safe-area fix.
+   Keep the artwork itself intact, but reserve genuine space beneath it so
+   the cap + lower handwritten callout can never be covered by the next section. */
+.flow-lightbulb{
+  overflow:hidden!important;
+}
+.flow-lightbulb .flow-inner{
+  box-sizing:border-box!important;
+}
+.flow-lightbulb .lightbulb-art{
+  box-sizing:content-box!important;
+  overflow:visible!important;
+  position:relative!important;
+  z-index:2!important;
+}
+.flow-lightbulb .lightbulb-art svg{
+  display:block!important;
+  width:auto!important;
+  height:100%!important;
+  max-width:100%!important;
+  max-height:none!important;
+  margin:0 auto!important;
+  overflow:visible!important;
+}
+
+/* Desktop/tablet also receives a protected lower gutter. */
+@media (min-width:761px){
+  .flow-lightbulb .lightbulb-art{
+    height:590px!important;
+    min-height:590px!important;
+    padding:12px 0 64px!important;
+  }
+  .flow-lightbulb .flow-inner{
+    padding-bottom:54px!important;
+  }
+}
+
+@media (max-width:760px){
+  .flow-lightbulb .flow-inner{
+    padding-bottom:22px!important;
+  }
+  .flow-lightbulb .lightbulb-art{
+    height:340px!important;
+    min-height:340px!important;
+    padding:0 0 48px!important;
+    margin:0!important;
+  }
+  .flow-lightbulb .lightbulb-art svg{
+    height:340px!important;
+    max-height:340px!important;
+  }
+}
+
+@media (max-width:360px){
+  .flow-lightbulb .lightbulb-art{
+    height:318px!important;
+    min-height:318px!important;
+    padding-bottom:44px!important;
+  }
+  .flow-lightbulb .lightbulb-art svg{
+    height:318px!important;
+    max-height:318px!important;
+  }
+}
+
+/* V39 — mobile bulb must remain entirely inside the light-blue artwork field. */
+@media (max-width:760px){
+  .flow-lightbulb{
+    overflow:hidden!important;
+  }
+
+  /* Make the blue polygon own the complete bulb zone and terminate exactly
+     at the end of the section. This prevents a white strip below the artwork. */
+  .flow-lightbulb .flow-shape.left-blue{
+    top:auto!important;
+    bottom:0!important;
+    width:100%!important;
+    height:clamp(370px,101vw,405px)!important;
+    clip-path:polygon(0 13%,78% 2%,100% 19%,100% 100%,0 100%)!important;
+  }
+
+  /* Keep every SVG element—including the cap, arrow and 'prepare'—inside
+     the blue field instead of relying on visible overflow. */
+  .flow-lightbulb .flow-inner{
+    padding-bottom:0!important;
+  }
+  .flow-lightbulb .lightbulb-art{
+    height:clamp(338px,91vw,360px)!important;
+    min-height:0!important;
+    padding:14px 0 22px!important;
+    margin:0!important;
+    box-sizing:border-box!important;
+    overflow:hidden!important;
+    align-self:end!important;
+  }
+  .flow-lightbulb .lightbulb-art svg{
+    display:block!important;
+    width:auto!important;
+    height:100%!important;
+    max-width:100%!important;
+    max-height:100%!important;
+    margin:0 auto!important;
+    overflow:visible!important;
+  }
+}
+
+@media (max-width:360px){
+  .flow-lightbulb .flow-shape.left-blue{
+    height:365px!important;
+  }
+  .flow-lightbulb .lightbulb-art{
+    height:330px!important;
+    padding-top:12px!important;
+    padding-bottom:20px!important;
+  }
+}
